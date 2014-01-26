@@ -1210,6 +1210,30 @@
     <ClCompile Include="..\..\tes5lib\modfile\subrecords\srenitsubrecord.cpp">
       <Filter>Source Files\Tes5Lib\ModFile\SubRecords</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\scripts\SrScriptFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\scripts\SrScriptFile_Token.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\scripts\SrScriptRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\modfile\subrecords\srmgefsnddsubrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\modfile\subrecords\SrVmadSubrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\modfile\subrecords\srepfdsubrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\modfile\subrecords\srperkdatasubrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tes5Lib\modfile\subrecords\srspitsubrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\tes5lib\common\zlib\zdll.lib">
