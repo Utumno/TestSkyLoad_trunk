@@ -47,6 +47,19 @@ typedef std::unordered_map<srrectype_t, subrecordinfo_t> CSubrecordInfoMap;
 
 typedef std::unordered_map<srrectype_t, int> CSubrecordCountMap;
 
+namespace std { // utumno: total hack
+	// see: http://stackoverflow.com/a/18548760/281545
+	template <>
+	struct hash<srrectype_t>
+	{
+		typedef srrectype_t argument_type;
+		typedef std::size_t        result_type;
+		std::size_t operator()(srrectype_t key) const {
+			return key.Value;
+		}
+	};
+}
+
 struct recordinfo_t
 {
 	srrectype_t Type;
@@ -56,7 +69,7 @@ struct recordinfo_t
 	dword		MaxSize;
 	dword		MinVersion;
 	dword		MaxVersion;
-	
+
 	CSubrecordInfoMap SubrecordInfos;
 
 	recordinfo_t()
